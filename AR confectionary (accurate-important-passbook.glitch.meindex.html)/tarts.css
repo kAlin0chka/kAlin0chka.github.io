@@ -1,0 +1,104 @@
+body {
+	background-color: #FAF0D7;
+	margin: 0;
+}
+
+.menu {
+	display: flex;
+	justify-content: flex-end;
+	padding: 16px;
+	flex-wrap: wrap;
+}
+
+.start {
+	margin-right: auto;
+	font-family: 'Caveat', cursive;
+	font-size: 19px;
+	font-weight: bolder;
+	color: #243A73;
+}
+
+.item {
+	padding: 10px;
+	text-decoration: none;
+	font-family: 'Caveat', cursive;
+	text-transform: uppercase;
+	color: #243A73;
+}
+
+.item:hover {
+	border: #8CC0DE solid 2px;
+	border-radius: 10px;
+}
+
+
+img {
+	width: 100%;
+}
+
+div {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
+/* Этот контейнер нужен для позиционирования переда и обратной стороны фото */
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+
+/* Позиционирования переда и обратной стороны фото на телефоне */
+.flip-card-front,
+.flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	/* Safari */
+	backface-visibility: hidden;
+}
+
+/* Стиль переда и обратной стороны фото */
+.flip-card-back {
+
+	transform: rotateY(180deg);
+}
+
+.one {
+	background-color: #FFD9C0;
+	border: 3px solid #f1f1f1;
+}
+
+/* Здесь обязательно надо добавить высоту и ширину. А последнее значение - для эффекта, как в 3D*/
+.flip-card1 {
+	padding: 20px;
+	background-color: #FFD9C0;
+	width: 250px;
+	height: 250px;
+
+	perspective: 1000px;
+}
+
+/* Поворот горизонтальный */
+.flip-card1:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+.discr {
+
+	font-family: 'Patrick Hand', cursive;
+	color: #243A73;
+}

@@ -1,0 +1,290 @@
+#video {
+	width: 100%;
+}
+
+body {
+	margin: 0;
+	background-color: #FAF0D7;
+}
+
+.menu {
+	display: flex;
+	justify-content: flex-end;
+	padding: 16px;
+	flex-wrap: wrap;
+}
+
+.start {
+	margin-right: auto;
+	font-family: 'Caveat', cursive;
+	font-size: 19px;
+	font-weight: bolder;
+	color: #243A73;
+}
+
+.item {
+	padding: 10px;
+	text-decoration: none;
+	font-family: 'Caveat', cursive;
+	text-transform: uppercase;
+	color: #243A73;
+}
+
+.item:hover {
+	border: #8CC0DE solid 2px;
+	border-radius: 10px;
+}
+
+
+.me {
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.head {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	font-family: 'Courgette', cursive;
+	color: #243A73;
+	flex-wrap: wrap;
+}
+
+.about {
+	border-radius: 60px;
+	border: #C6DCE4 solid 2px;
+}
+
+
+.fav-head {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+h2 {
+	font-family: 'Courgette', cursive;
+	font-size: 30px;
+	color: #243A73;
+}
+
+.fav {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+/* Этот контейнер нужен для позиционирования переда и обратной стороны фото */
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+/* Позиционирования переда и обратной стороны фото на телефоне */
+.flip-card-front,
+.flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	/* Safari */
+	backface-visibility: hidden;
+}
+
+/* Стиль переда и обратной стороны фото */
+.flip-card-back {
+	transform: rotateY(180deg);
+}
+
+.one {
+	background-color: #FFD9C0;
+	border: 2px solid #C6DCE4;
+}
+
+/* Здесь обязательно надо добавить высоту и ширину. А последнее значение - для эффекта, как в 3D*/
+.flip-card1 {
+	padding: 20px;
+	background-color: #FFD9C0;
+	width: 250px;
+	height: 250px;
+	perspective: 1000px;
+}
+
+/* Поворот горизонтальный */
+.flip-card1:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+.img {
+	width: 100%;
+}
+
+.discr {
+	display: flex;
+	align-items: center;
+	font-family: 'Patrick Hand', cursive;
+	color: #243A73;
+}
+
+.price {
+	padding: 20px;
+	display: inline-block;
+	transform: rotate(-18deg);
+}
+
+ins {
+	text-decoration: none;
+	padding: 5px;
+}
+
+
+.hcont {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 20px;
+	flex-wrap: wrap;
+}
+
+.contact {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.address {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.part {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.icon {
+	padding: 10px;
+}
+
+i:hover {
+	scale: 1.4;
+} 
+
+p {
+	font-family: 'Patrick Hand', cursive;
+	font-size: 22px;
+	color: #243A73;
+}
+
+a {
+	color: #243A73;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	margin-top: -25px;
+}
+
+.text {
+    font-family: 'Patrick Hand', cursive;
+	font-size: 20px;
+    border: none;
+	border-radius: 20px;
+    padding: 10px;
+	width: 400px;
+	color: #243A73;
+}
+
+button {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 30px;
+    background-color: #FFD9C0;
+    border: solid 1px #243A73;
+	border-radius: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+	color: #243A73;
+}
+
+#myBtn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: solid 1px #243A73;; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: #C6DCE4; /* Set a background color */
+	color: #243A73; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px; /* Some padding */
+	border-radius: 10px; /* Rounded corners */
+	font-size: 18px; /* Increase font size */
+	font-family: 'Patrick Hand', cursive;
+  }
+  
+  #myBtn:hover {
+	background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+@media all and (max-width: 800px) {
+	#video {
+		width: 100%;
+	}
+
+	.item {
+		text-transform: uppercase;
+	}
+
+	.menu {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.discr {
+		font-size: 20px;
+	}
+
+	iframe {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 500px) {
+	#video {
+		width: 100%;
+	}
+
+	.me {
+		display: flex;
+		margin-left: 70px;
+		flex-direction: column-reverse;
+	}
+
+	.fav-head {
+		margin-left: 10px;
+	}
+
+	p {
+		margin-left: -8px;
+	}
+
+	h1 {
+		margin-left: 30px;
+	}
+}

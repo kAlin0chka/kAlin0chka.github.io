@@ -1,0 +1,90 @@
+.back1 {
+	background-image: url(back111.jpg);
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	-o-filter: blur(10px);
+	-ms-filter: blur(10px);
+	filter: blur(10px);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+  flex-wrap: wrap;
+}
+
+.start {
+  margin-right: auto;
+  font-family: 'Caveat', cursive;
+  font-size: 19px;
+  font-weight: bolder;
+  color: #243A73;
+}
+
+.item {
+  padding: 10px;
+  text-decoration: none;
+  font-family: 'Caveat', cursive;
+  text-transform: uppercase;
+  color: #243A73;
+}
+
+.item:hover {
+  border: #8CC0DE solid 2px;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  font-size: 20px;
+  background-color: #FDF6EC;
+  border: none;
+  font-family: 'Caveat', cursive;
+}
+  
+  
+  /* .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .row {
+    display: flex;
+  } */
+
+  
+  img {
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 10px; /* Some padding */
+    width: 480px; /* Set a small width */
+  }
+  /* a {
+    padding: 5px;
+  } */
+  
+  
+  
+  /* Add a hover effect (blue shadow) */
+  /* img:hover {
+    box-shadow: 0 0 2px 1px #8CC0DE;
+  } */
+
+  /* @media all and (max-width: 800px) {
+    .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+  } */
