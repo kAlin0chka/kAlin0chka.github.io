@@ -55,15 +55,7 @@
     border: none;
 	font-family: 'Caveat', cursive;
 }
-/* .container {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-}
 
-.row {
-	display: flex;
-} */
 
 img {
 	border: 1px solid #ddd;
@@ -76,15 +68,7 @@ img {
 	/* Set a small width */
 }
 
-/* a {
-	padding: 5px;
-}
 
-
-/* Add a hover effect (blue shadow) */
-/* img:hover {
-	box-shadow: 0 0 2px 1px #8CC0DE;
-} */ */
 
 @media all and (max-width: 800px) {
 	.container {
@@ -92,9 +76,7 @@ img {
 		justify-content: center;
 		flex-wrap: wrap;
 	}
-  /* .row {
-    display: flex;
-    flex-wrap: wrap;
-   justify-content: center;
-  } */
+	img {
+		width: 380px;
+	}
 }

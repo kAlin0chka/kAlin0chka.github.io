@@ -44,6 +44,7 @@
 .contact {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .address {
@@ -110,4 +111,10 @@ h2 {
 	font-family: 'Courgette', cursive;
 	font-size: 30px;
 	color: #243A73;
+}
+
+@media all and (max-width: 800px) {
+	.text {
+		width: 300px;
+	}
 }

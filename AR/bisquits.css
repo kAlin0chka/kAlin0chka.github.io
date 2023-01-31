@@ -70,21 +70,14 @@
     padding: 10px; /* Some padding */
     width: 480px; /* Set a small width */
   }
-  /* a {
-    padding: 5px;
-  } */
-  
-  
-  
-  /* Add a hover effect (blue shadow) */
-  /* img:hover {
-    box-shadow: 0 0 2px 1px #8CC0DE;
-  } */
 
-  /* @media all and (max-width: 800px) {
-    .row {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+  @media all and (max-width: 800px) {
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
     }
-  } */
+    img {
+      width: 380px;
+    }
+  }

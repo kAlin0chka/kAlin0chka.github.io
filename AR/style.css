@@ -244,7 +244,7 @@ button {
 
 @media all and (max-width: 800px) {
 	#video {
-		width: 100%;
+		width: 130%;
 	}
 
 	.item {
@@ -263,11 +263,20 @@ button {
 	iframe {
 		width: 100%;
 	}
+	.text {
+		width: 300px;
+	}
+	#myBtn {
+		position: fixed; /* Fixed/sticky position */
+		bottom: 20px; /* Place the button at the bottom of the page */
+		right: 130px; /* Place the button 30px from the right */
+		z-index: 99;
+	}
 }
 
 @media all and (max-width: 500px) {
 	#video {
-		width: 100%;
+		width: 130%;
 	}
 
 	.me {

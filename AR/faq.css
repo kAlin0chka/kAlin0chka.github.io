@@ -85,4 +85,14 @@ a {
     color: #243A73;
 }
 
+@media all and (max-width: 800px) {
+  
+    .qst {
+      font-size: 15px;
+    }
+    .part {
+    font-size: 18px;
+  }
+}
+
 
