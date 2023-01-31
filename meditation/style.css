@@ -1,0 +1,77 @@
+body {
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+#myVideo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#author {
+    font-size: 15px;
+    margin-top: -20px;
+}
+
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 15px;
+    border-radius: 15px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#btn-water:hover {
+    background: linear-gradient(to right, #456975, #f0f3f5) ;
+}
+
+#btn-forest:hover {
+    background: linear-gradient(to right, #335343, #f0f3f5) ;
+}
+
+#btn-noise:hover {
+    background: linear-gradient(to right,  #6ec7ea, #f0f3f5) ;
+}
+
+#btn-classic:hover {
+    background: linear-gradient(to right,  #e8c544, #f0f3f5) ;
+}
+
+#quote {
+    text-decoration: underline;
+    color: blue;
+}
+
+a {
+text-decoration: none;
+color: black;
+}
+
+#choose {
+    text-align: center;
+}
+
+@media all and (max-width: 800px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+

@@ -1,0 +1,23 @@
+video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
+}
+
+#timer-container {
+    display: flex;
+    justify-content: center;
+}
+
+#timer {
+    padding: 20px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 80px;
+    background: linear-gradient(to right, #335343, #f0f3f5);
+    border-radius: 20px;
+}
