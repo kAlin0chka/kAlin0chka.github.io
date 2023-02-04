@@ -1,0 +1,170 @@
+body {
+	background-image: url("background.jpg");
+	background-size: auto;
+	margin: 0;
+}
+
+#logo {
+	margin-right: auto;
+}
+
+#menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+nav {
+	padding: 20px;
+}
+
+#item {
+	padding: 40px;
+	font-family: 'Tillana', cursive;
+	font-size: 25px;
+	text-decoration: none;
+	color: #F5F5F5;
+}
+
+#footer {
+	display: flex;
+	background-color: #EDD8B9;
+	height: 50px;
+}
+
+#follow {
+	margin-right: auto;
+	color: #2D1D1D;
+	margin-top: 5px;
+	padding-left: 60px;
+	font-family: 'Tillana', cursive;
+	font-size: 25px;
+}
+
+#icon {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#slogan {
+	display: flex;
+	justify-content: center;
+	font-family: 'Parisienne', cursive;
+	font-weight: lighter;
+	padding-right: 70px;
+	font-size: 22px;
+	margin-top: -60px;
+	color: #F5F5F5;
+}
+
+#container {
+	display: flex;
+}
+
+#par {
+	font-family: 'Tillana', cursive;
+	font-size: 25px;
+	color: #F5F5F5;
+	margin-left: 10px;
+}
+
+#btnReserve {
+	background-color: #ff0000;
+	padding: 15px;
+	font-family: 'Tillana', cursive;
+	font-size: 25px;
+	font-weight: bold;
+	border: none;
+	margin-left: 70px;
+	border-radius: 20px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+#btnReserve span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+#btnReserve span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+#btnReserve:hover span {
+	padding-right: 25px;
+}
+
+#btnReserve:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+@media all and (max-width:800px) {
+	#menu {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	nav {
+		display: flex;
+		justify-content: center;
+	}
+
+	#item {
+		padding: 10px;
+		font-family: 'Tillana', cursive;
+		font-size: 15px;
+		text-decoration: none;
+		color: #F5F5F5;
+	}
+
+	#logo {
+		align-self: center;
+		margin-bottom: 30px;
+		size: 10px;
+	}
+
+	#slogan {
+		text-align: center;
+		font-size: 20px;
+		padding: 10px;
+	}
+
+	#btnReserve {
+		margin-top: 40px;
+		margin-left: 60px;
+	}
+
+	#footer {
+		display: flex;
+		background: none;
+	}
+
+	#follow {
+		margin-right: auto;
+		color: #EDD8B9;
+		margin-top: 5px;
+		padding-left: 30px;
+		font-family: 'Tillana', cursive;
+		font-size: 15px;
+	}
+
+	#icon {
+		padding-left: 20px;
+		padding-right: 20px;
+		background-color: #EDD8B9;
+	}
+
+	#container {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+}
