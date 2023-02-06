@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>EasyRoomieSplit</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <div class="par">
+            <h1>EasyRoomieSplit</h1>
+            <h4> <center> Do you need to share your living cost between roommates or even families? <br> With us it's piece of cake. <br> Just fill your expences in.</center></h4>
+            <p>Are you sharing home with</p>
+            <div id="choose">
+               <div class="family">
+                  <button class="btnFamily">families</button>
+               </div>
+               <span>&nbsp;or &nbsp;</span>
+               <div class="friend">
+                  <button class="btnFriends">friends</button> 
+               </div>
+               <span>
+               ?
+               </span>
+            </div>
+            <div class="familySelected">
+               <p>How many members in the 1st family?</p>
+               <input placeholder="Number of members" class="familyOneInput">
+               <p>How many members in the 2d family?</p>
+               <input placeholder="Number of members" class="familyTwoInput">
+            </div>
+            <div class="friendsSelected">
+               <p>How many roommates?</p>
+               <input placeholder="Number of roommates" class="roommatesInput">
+            </div>
+            <p>Rental cost</p>
+            <input placeholder="Rent" class="rentInput">
+            <p>Utilities</p>
+            <input placeholder="Utilities" class="utilityInput">
+            <p>Food and household expences</p>
+            <input placeholder="Food and household" class="foodInput">
+            <br>
+            <button id="calculate">Calculate</button>
+            <br>
+            <div class="blocksFriends">
+               <div class="rent">
+                  <p class="boxHead">Rent</p>
+                  <span>$</span>
+                  <span class="rentPerPerson"></span>
+                  <span>per person</span>
+               </div>
+               <div class="utilities">
+                  <p class="boxHead">Utilities</p>
+                  <span>$</span>
+                  <span class="utilitiesPerPerson"></span>
+                  <span>per person</span>
+               </div>
+               <div class="food">
+                  <p class="boxHead">Food</p>
+                  <span>$</span>
+                  <span class="foodPerPerson"></span>
+                  <span>per person</span>
+               </div>
+               <div class="total">
+                  <p class="boxHead">Total</p>
+                  <span>$</span>
+                  <span class="totalPerPerson"></span>
+                  <span>per person</span>
+               </div>
+            </div>
+
+
+            <div class="blocksFamily">
+               <div class="rentFamily">
+                  <p class="boxHead">Rent</p>
+                  <span>$</span>
+                  <span class="rentPerFirstFamily"></span>
+                  <span>per 1st family</span>
+               </div>
+               <div class="utilitiesFamily">
+                  <p class="boxHead">Utilities</p>
+                  <span>$</span>
+                  <span class="utilitiesPerFirstFamily"></span>
+                  <span>per 1st family</span>
+               </div>
+               <div class="foodFamily">
+                  <p class="boxHead">Food</p>
+                  <span>$</span>
+                  <span class="foodPerFirstFamily"></span>
+                  <span>per 1st family</span>
+               </div>
+               <div class="totalFamily">
+                  <p class="boxHead">Total</p>
+                  <span>$</span>
+                  <span class="totalPerFirstFamily"></span>
+                  <span>per 1st family</span>
+               </div>
+
+
+               <div class="rentFamily">
+                  <p class="boxHead">Rent</p>
+                  <span>$</span>
+                  <span class="rentPerSecondFamily"></span>
+                  <span>per 2d family</span>
+               </div>
+               <div class="utilitiesFamily">
+                  <p class="boxHead">Utilities</p>
+                  <span>$</span>
+                  <span class="utilitiesPerSecondFamily"></span>
+                  <span>per 2d family</span>
+               </div>
+               <div class="foodFamily">
+                  <p class="boxHead">Food</p>
+                  <span>$</span>
+                  <span class="foodPerSecondFamily"></span>
+                  <span>per 2d family</span>
+               </div>
+               <div class="totalFamily">
+                  <p class="boxHead">Total</p>
+                  <span>$</span>
+                  <span class="totalPerSecondFamily"></span>
+                  <span>per 2d family</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="index.js"></script>
+   </body>
+</html>

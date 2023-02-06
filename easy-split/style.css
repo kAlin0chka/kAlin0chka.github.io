@@ -1,0 +1,156 @@
+body {
+    background-image: url(https://images.pexels.com/photos/4778405/pexels-photo-4778405.jpeg?cs=srgb&dl=pexels-cottonbro-4778405.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 170vh;
+    background-position: center;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 25px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+.par {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    height: 1000px;
+    border: 1px solid black;
+    background-color:rgba(120, 80, 40, 0.6);
+    padding: 20px;
+    
+}
+
+#choose {
+    display: flex;
+}
+
+input {
+    font-family: 'Raleway', sans-serif;
+    border-radius: 5px;
+    border: 1px solid #61481C;
+    padding: 3px;
+}
+
+button {
+    font-family: 'Raleway', sans-serif;
+    color: #61481C;
+    border-radius: 20px;
+    border: 2px solid #61481C;
+    padding: 6px;
+    background-color: rgb(230, 179, 37, 0.5 );
+    font-weight: bold;
+}
+button:hover {
+    cursor: pointer;
+}
+
+.familySelected {
+    display: flex;
+    display: none;
+} 
+
+.friendsSelected {
+    display: flex;
+    display: none;  
+}
+
+.blocksFriends {
+    display: none;
+    flex-wrap: wrap;
+}
+
+.blocksFamily {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: none;
+}
+
+
+.total, .food, .utilities, .rent {
+    height: 100px;
+    width: 150px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: rgba(230, 179, 37, 0.6);
+    text-align: center;
+}
+
+.totalFamily, .foodFamily, .utilitiesFamily, .rentFamily {
+    height: 90px;
+    width: 120px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 90px;
+    background-color: rgba(230, 179, 37, 0.6);
+    text-align: center;
+}
+
+#calculate {
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+
+.roommatesInput {
+    width: 200px;
+}
+
+
+@media all and (max-width: 800px) {
+    .totalFamily, .foodFamily, .utilitiesFamily, .rentFamily, .total, .food, .utilities, .rent {
+    height: 60px;
+    width: 130px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 90px;
+    background-color: rgba(230, 179, 37, 0.6);
+    text-align: center;
+    font-size: 12px;
+    }
+    
+    .boxHead {
+        font-size: 12px;
+    }
+
+    .par {
+        width: 700px;
+        height: 1140px;
+    }
+
+    .blocksFriends {
+        justify-content: space-around;
+    
+    }
+    body {
+        background-image: repeating-linear-gradient();
+    }
+}
+
+
+
+
+
+    
+
+
