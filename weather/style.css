@@ -1,0 +1,97 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1547445958-0f5f66ad4854?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:  rgb(213,180,181) ;
+    height: 100vh;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    padding: 15px;
+    font-size: 35px;
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 20px;
+    background-color: rgb(213,180,181);
+    
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+}
+
+#when-where {
+    display: flex;
+    flex-direction: column;
+}
+
+#city {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#date {
+    font-size: 25px;
+    margin-top: -30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#condition {
+    font-size: 35px;
+    margin-top: -10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#temp {
+    font-size: 160px;
+    margin-top: 18px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow:  1px 6px pink;
+}
+
+#otherConditions {
+    display: flex;
+    justify-content: space-around;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+#when-where, #temp, #feelsLike, #wind, #humidity {
+    display: none;
+}
+
+@media all and (max-width: 500px){
+    body {
+        background-size: cover;
+    }
+
+    input {
+        font-size: 20px;
+    }
+
+    #city {
+        font-size: 30px;
+    }
+    #date {
+        font-size: 15px;
+    }
+    #condition {
+        font-size: 20px;
+    }
+    #temp {
+        font-size: 100px;
+    }
+    #otherConditions {
+        font-size: 20px;
+    }
+}
