@@ -11,6 +11,6 @@ gsap.to ("h1", {
     // yoyo: true,
     delay: 0.2
 })
-gsap.from (".image", {x: -800, duration: 3, rotation: 360, delay: 3.5, opacity: 0})
-gsap.from ("#par", {duration: 2.7, scale: 2, opacity: 0, delay: 5.5})
-gsap.to ("button", {opacity:1, y: -20, duration:3, delay:7.5})
+gsap.from (".image", {x: -800, duration: 3, delay: 3.5, opacity: 0})
+gsap.from ("#par", {x: 800, duration: 3, delay: 3.5, opacity: 0})
+gsap.to ("button", {opacity:1, y: -20, duration:3, delay:6.5})
